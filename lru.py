@@ -3,10 +3,15 @@
 def lru(pages, capacity):
     """
     Function to simulate LRU Cache
-    :param ages: List of page numbers
-    :param capacity: Capacity of the cache
-    :return: Number of page faults
+    
+    Args:
+        pages (list): A list of page numbers to be accessed.
+        capacity (int): The maximum number of pages that can be held in memory.
+
+    Returns:
+        int: The number of page faults that occurred during the simulation.
     """
+
     cache = []
     page_faults = 0
 
