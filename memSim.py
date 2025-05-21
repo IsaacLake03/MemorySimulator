@@ -8,7 +8,7 @@ class TLB:
     """Translation Lookaside Buffer with 16 entries using FIFO replacement"""
     def __init__(self):
         self.entries = OrderedDict()  # page_num -> frame_num
-        self.max_size = 16
+        self.max_size = 16            # Alter this for the tests with different TLB sizes
     
     def lookup(self, page_num):
         """Returns frame number if found, None otherwise"""
