@@ -4,11 +4,13 @@ import sys
 import struct
 from collections import deque, OrderedDict
 
+TLB_SIZE = 16  # Change this for different TLB tests
+
 class TLB:
     """Translation Lookaside Buffer with 16 entries using FIFO replacement"""
     def __init__(self):
         self.entries = OrderedDict()  # page_num -> frame_num
-        self.max_size = 16            # Alter this for the tests with different TLB sizes
+        self.max_size = TLB_SIZE
     
     def lookup(self, page_num):
         """Returns frame number if found, None otherwise"""
