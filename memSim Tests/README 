@@ -2,7 +2,11 @@
 
 Ethan Vosburg and Isaac Lake
 
-Any special instructions.
+Make it with make, and clean with make clean as usual.
+
+Should you need to edit the TLB size for any testing
+you will need to recompile it after changing the constant
+present at the top of memSim.py
 
 Have fun, and do not run this in Vivado...
 
